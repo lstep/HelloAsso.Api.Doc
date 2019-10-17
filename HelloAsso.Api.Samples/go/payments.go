@@ -8,10 +8,12 @@ import (
 )
 
 // You need to set id and key
-id := ""
-key := ""
-data := []byte(id + ":" + key)
-token := base64.StdEncoding.EncodeToString(data)
+var (
+  id = ""
+  key = ""
+  data = []byte(id + ":" + key)
+  token = base64.StdEncoding.EncodeToString(data)
+)
 
 // list payments
 func ListPayments() {
